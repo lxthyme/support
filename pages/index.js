@@ -37,7 +37,7 @@ const Home = ({ mail }) => {
 export const getStaticProps = async ({ params, preview, previewData }) => {
   return {
     props: {
-      mail: process.env.mail_shawn,
+      mail: process.env.mail_fgh,
     },
   };
 };
