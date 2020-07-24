@@ -1,6 +1,5 @@
 import Head from "next/head";
 
-const V_MAIL = process.env.mail_today;
 const Home = ({ mail }) => {
   return (
     <div
@@ -38,7 +37,7 @@ const Home = ({ mail }) => {
 export const getStaticProps = async ({ params, preview, previewData }) => {
   return {
     props: {
-      mail: process.env.mail,
+      mail: process.env.mail_today,
     },
   };
 };
