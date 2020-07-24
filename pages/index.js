@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-const V_MAIL = process.env.mail;
+const V_MAIL = process.env.mail_shawn;
 const Home = ({ mail }) => {
   return (
     <div
