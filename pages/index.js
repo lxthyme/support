@@ -1,5 +1,6 @@
 import Head from "next/head";
 
+/// test
 const Home = ({ mail }) => {
   return (
     <div
