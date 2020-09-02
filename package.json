@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "NODE_BUILD_ENV=today next dev",
-    "build": "npm run build:lxthyme",
+    "dev": "NODE_BUILD_ENV=shawn next dev",
+    "build": "npm run build:shawn",
     "build:today": "NODE_BUILD_ENV=today next build",
     "build:shawn": "NODE_BUILD_ENV=shawn next build",
     "build:lxthyme": "NODE_BUILD_ENV=lxthyme next build",
