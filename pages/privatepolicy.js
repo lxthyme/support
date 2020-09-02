@@ -27,10 +27,10 @@ const Policy = ({ policyString }) => {
 export const getStaticProps = async ({ params, preview, previewData }) => {
   let policyString = "";
   try {
-    policyString = await fs.readFileSync(
-      `./model/${process.env.policy_shawn}`,
-      "utf8"
-    );
+    const envName = "policy_" + process.env.NODE_BUILD_ENV;
+    const name = process.env[envName];
+    console.log("name: ", { envName, name });
+    policyString = await fs.readFileSync(`./model/${name}`, "utf8");
     policyString = policyString.split("\n").join("\n");
   } catch (e) {
     console.log("E: ", e);

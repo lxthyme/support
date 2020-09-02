@@ -1,5 +1,6 @@
 import Head from "next/head";
 
+/// test
 const Home = ({ mail }) => {
   return (
     <div
@@ -35,9 +36,12 @@ const Home = ({ mail }) => {
   );
 };
 export const getStaticProps = async ({ params, preview, previewData }) => {
+  const envName = "mail_" + process.env.NODE_BUILD_ENV;
+  const mail = process.env[envName];
+  console.log("name: ", mail);
   return {
     props: {
-      mail: process.env.mail_shawn,
+      mail,
     },
   };
 };
