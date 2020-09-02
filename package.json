@@ -4,8 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "build": "npm run build:lxthyme",
+    "build:today": "NODE_BUILD_ENV=today next build",
+    "build:shawn": "NODE_BUILD_ENV=shawn next build",
+    "build:lxthyme": "NODE_BUILD_ENV=lxthyme next build",
+    "start": "NODE_ENV=production node server.js"
   },
   "dependencies": {
     "next": "9.4.4",
