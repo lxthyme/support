@@ -8,7 +8,7 @@
     "build:today": "NODE_BUILD_ENV=today next build",
     "build:shawn": "NODE_BUILD_ENV=shawn next build",
     "build:lxthyme": "NODE_BUILD_ENV=lxthyme next build",
-    "start": "NODE_ENV=production node server.js"
+    "start": "next start"
   },
   "dependencies": {
     "next": "9.4.4",

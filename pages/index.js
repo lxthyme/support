@@ -36,11 +36,12 @@ const Home = ({ mail }) => {
   );
 };
 export const getStaticProps = async ({ params, preview, previewData }) => {
-  const envName = "mail_" + process.env.NODE_BUILD_ENV
-    const name = process.env[envName]
+  const envName = "mail_" + process.env.NODE_BUILD_ENV;
+  const mail = process.env[envName];
+  console.log("name: ", mail);
   return {
     props: {
-      mail: process.env[name],
+      mail,
     },
   };
 };

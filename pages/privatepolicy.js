@@ -29,6 +29,7 @@ export const getStaticProps = async ({ params, preview, previewData }) => {
   try {
     const envName = "policy_" + process.env.NODE_BUILD_ENV
     const name = process.env[envName]
+    console.log('name: ', name);
     policyString = await fs.readFileSync(
       `./model/${name}`,
       "utf8"
